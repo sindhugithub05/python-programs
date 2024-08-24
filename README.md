@@ -54,3 +54,16 @@ elif select==5:
 	print(number_1,"%",number_2,"=",floatdivision(number_1,number_2))
 else:
     print(" invalid input")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# profit and loss code
+a=int(input("Enter the cost price\n"))
+b=int(input("Enter the selling price\n"))
+if(b>a):
+    x=((b-a)/a)*100
+    print(f"Profit {x:.1f}")
+elif(b<a):
+    y=((a-b)/a)*100
+    print(f"Loss {y:.1f}")
+else:
+    print(f"No Profit No Loss")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
