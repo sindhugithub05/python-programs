@@ -105,7 +105,7 @@ def main():
     print("2.Name")
     choice=input("")
     
-    if choice=="1":
+if choice=="1":
         name=input("Enter the name\n")
         message=input("Enter the message\n")
         greet(name,message)
@@ -129,3 +129,14 @@ result3=multiply(a,arg2=9)
 print(f"The result is {result1}")
 print(f"The result is {result2}")
 print(f"The result is {result3}")
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# generating a calendar
+import calandar
+y=int(input("Enter the year:"))
+m=1
+print("\n ************ CALENDAR **********")
+cal=calendar.TextCalendar(calendar.SUNDAY)
+i=1
+while i<=12:
+    cal.prmonth(y,i)
+    i+=1
